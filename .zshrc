@@ -118,6 +118,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GO111MODULE=on
 
+## Vlang
+export PATH=$PATH:$HOME/v
+
 ## Qt
 export Qt_DIR="/home/zaki/Qt/6.2.2/gcc_64/lib/cmake/Qt6"
 export Qt6_DIR="/home/zaki/Qt/6.2.2/gcc_64/lib/cmake/Qt6"
@@ -127,8 +130,19 @@ export PATH=$qt_bin:$PATH
 ## Helix IDE
 export PATH=$HOME/.local/bin/helix:$PATH
 
+## Lite-XL IDE
+export PATH=$HOME/.local/bin/lite-xl:$PATH
+
+## AppImage apps
+export PATH=$HOME/Applications:$PATH
+
 ## alias
 alias docker=podman
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/home/zaki/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
